@@ -1,93 +1,108 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    
+
     <title>Hazel Prodigalidad</title>
 </head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-/* base styles */
-* {
-    margin: 0;
-    font-family: "Quicksand";
-    font-weight: bold;
-  }
-section{
-    padding: 60px 0;
-}
-/* custom button animation - fill color on hover */
-.custom-button {
-    color: #0d6efd;
-    background-image: linear-gradient(#0d6efd, #0d6efd);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size .5s, color .5s;
-}
-.custom-button:hover {
-  background-size: 100% 100%;
-  color: #fff;
-}
-.custom-button {
-  background-position: 0% 50%;
-}
-/* custom card animation - rise on hover */
-.custom-card{
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s
-}
-.custom-card:hover{
-    top: -10px;
-}
-/* custom card spacings */
-.skills__list {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.skills__list-item {
-    margin: 0.5em;
-    padding: 10px;
-}
-/* project stack */
-.project__stack {
-    width: fit-content;
-    /* margin: 0 auto; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.project__stack-item {
-    margin: 0.5em;
-    /* padding: 10px; */
-}
-ul {
-    list-style-type: none;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-/* If the screen size is 1200px wide or more, set the font-size to 80px */
-@media (min-width: 1200px) {
-  .responsive-font-example {
-    font-size: 80px;
-  }
-}
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1199.98px) {
-  .responsive-font-example {
-    font-size: 30px;
-  }
-}
-  
+    /* base styles */
+    * {
+        margin: 0;
+        font-family: "Quicksand";
+        font-weight: bold;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* custom button animation - fill color on hover */
+    .custom-button {
+        color: #0d6efd;
+        background-image: linear-gradient(#0d6efd, #0d6efd);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size .5s, color .5s;
+    }
+
+    .custom-button:hover {
+        background-size: 100% 100%;
+        color: #fff;
+    }
+
+    .custom-button {
+        background-position: 0% 50%;
+    }
+
+    /* custom card animation - rise on hover */
+    .custom-card {
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s
+    }
+
+    .custom-card:hover {
+        top: -10px;
+    }
+
+    /* custom card spacings */
+    .skills__list {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills__list-item {
+        margin: 0.5em;
+        padding: 10px;
+    }
+
+    /* project stack */
+    .project__stack {
+        width: fit-content;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project__stack-item {
+        margin: 0.5em;
+        /* padding: 10px; */
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    /* If the screen size is 1200px wide or more, set the font-size to 80px */
+    @media (min-width: 1200px) {
+        .responsive-font-example {
+            font-size: 80px;
+        }
+    }
+
+    /* If the screen size is smaller than 1200px, set the font-size to 80px */
+    @media (max-width: 1199.98px) {
+        .responsive-font-example {
+            font-size: 30px;
+        }
+    }
 </style>
+
 <body>
     <!-- navbar -->
     <nav class="navbar fixed-top border-bottom navbar-expand-md navbar-light bg-light">
@@ -99,9 +114,8 @@ ul {
             </a>
 
             <!-- toggle button for mobile nav -->
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
-            aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -132,34 +146,38 @@ ul {
                 <!-- My Picture  -->
                 <div class="col-md-5 text-center d-none d-md-block">
                     <span class="tt" data-bs-placement="bottom" title="Hazel Prodigalidad">
-                        <img src="./assets/idpicture.png" class="img-fluid border border-4 rounded-circle" alt="Hazel Prodigalidad">
+                        <img src="./assets/idpicture.png" class="img-fluid border border-4 rounded-circle"
+                            alt="Hazel Prodigalidad">
                     </span>
                 </div>
                 <!-- intro -->
-                <div  class="col-md-5 text-center d-md-block">
+                <div class="col-md-5 text-center d-md-block">
                     <h1 class="display-3">
                         Hi, I am <span style="color: #f7007b;">Hazel Prodigalidad.</span>
                     </h1>
                     <h2 class="display-5">A Web Developer.</h2>
                     <p class="subtitle">
-                        My portfolio showcases some of the projects I have worked on in the past. Each project demonstrates my ability to create unique and responsive websites that meet the specific needs of my clients. I am committed to delivering high-quality work and ensuring customer satisfaction.
+                        My portfolio showcases some of the projects I have worked on in the past. Each project
+                        demonstrates my ability to create unique and responsive websites that meet the specific needs of
+                        my clients. I am committed to delivering high-quality work and ensuring customer satisfaction.
                     </p>
                     <p class="subtitle">
-                        Thank you for taking the time to visit my portfolio, and I look forward to working with you in the future.
+                        Thank you for taking the time to visit my portfolio, and I look forward to working with you in
+                        the future.
                     </p>
                     <!-- linkedin and github profile -->
                     <div class="container fluid">
                         <div class="d-grid gap-2 d-lg-block">
-                            <a href="https://drive.google.com/file/d/11w8aDdBmQut5kvwVzOOVk_yhG_AIb9Ej/view?usp=sharing" 
-                            class="custom-button btn border-primary">
+                            <a href="https://drive.google.com/file/d/11w8aDdBmQut5kvwVzOOVk_yhG_AIb9Ej/view?usp=sharing"
+                                class="custom-button btn border-primary">
                                 Resume
                             </a>
-                            <a href="https://github.com/HazelProdi" 
-                            class="custom-button btn border-primary">
-                            <i class="bi bi-github" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="slide-out-right"></i> Github
+                            <a href="https://github.com/HazelProdi" class="custom-button btn border-primary">
+                                <i class="bi bi-github" data-mdb-toggle="animation" data-mdb-animation-reset="true"
+                                    data-mdb-animation="slide-out-right"></i> Github
                             </a>
-                            <a href="https://www.linkedin.com/in/hazel-prodigalidad-7b7902216/" 
-                            class="custom-button btn border-primary">
+                            <a href="https://www.linkedin.com/in/hazel-prodigalidad-7b7902216/"
+                                class="custom-button btn border-primary">
                                 <i class="bi bi-linkedin"></i> Linkedin
                             </a>
                         </div>
@@ -189,7 +207,8 @@ ul {
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">Git</li>
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">Node</li>
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">Express</li>
-                    <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">AWS Services</li>
+                    <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">AWS Services
+                    </li>
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">MySQL</li>
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">NoSQL</li>
                     <li class="col-lg-auto list-group-item skills__list-item border shadow custom-card">CouchDB</li>
@@ -212,7 +231,8 @@ ul {
                     <div class="card-header text-primary">GC Portal <br>(Fullstack)</div>
                     <div class="card-body">
                         <small class="fw-normal">
-                            To systematized the GC Plans and easily manage new realeased memo regarding the changes or the order of plans.
+                            To systematized the GC Plans and easily manage new realeased memo regarding the changes or
+                            the order of plans.
                         </small>
                         <!-- Project Stack -->
                         <div class="row g-0 align-items-center justify-content-center">
@@ -232,7 +252,8 @@ ul {
                     <div class="card-header text-primary">Document Search System <br>(Fullstack)</div>
                     <div class="card-body">
                         <small class="fw-normal">
-                            To have a centralized searching index of plans for GC Planners and to access these plans even if they are on the site.
+                            To have a centralized searching index of plans for GC Planners and to access these plans
+                            even if they are on the site.
                         </small>
                         <!-- Project Stack -->
                         <div class="row g-0 align-items-center justify-content-center">
@@ -288,7 +309,8 @@ ul {
                 </div>
 
                 <div class="custom-card card shadow text-dark bg-light m-2 col-lg-4 col-sm-6">
-                    <div class="card-header text-primary">Grab-a-Job Mobile App <br> (Capstone Project - Fullstack)</div>
+                    <div class="card-header text-primary">Grab-a-Job Mobile App <br> (Capstone Project - Fullstack)
+                    </div>
                     <div class="card-body">
                         <small class="fw-normal">
                             A mobile application that user can apply for their desired jobs anytime, anywhere.
@@ -301,7 +323,8 @@ ul {
                         </div>
 
                         <div class="project-links mt-2">
-                            <a href="https://github.com/HazelProdi/Grab-a-Job-Mobile-Application-2018-Thesis-" class="card-link">Github Link</a>
+                            <a href="https://github.com/HazelProdi/Grab-a-Job-Mobile-Application-2018-Thesis-"
+                                class="card-link">Github Link</a>
                             <!-- <a href="#" class="card-link">Another link</a> -->
                         </div>
                     </div>
@@ -309,6 +332,7 @@ ul {
             </div>
         </div>
     </section>
+
     <!-- MINI PROJECTS -->
     <section id="projects">
         <div class="container-lg">
@@ -321,7 +345,8 @@ ul {
                     <div class="card-header text-primary">Cipher Code <br> (Frontend)</div>
                     <div class="card-body">
                         <small class="fw-normal">
-                            The goal of this project is to create a simple but effective way to encode and decode messages using a cipher code.
+                            The goal of this project is to create a simple but effective way to encode and decode
+                            messages using a cipher code.
                         </small>
                         <!-- List of used programming language -->
                         <div class="row g-0 align-items-center justify-content-center">
@@ -339,7 +364,8 @@ ul {
                     <div class="card-header text-primary">Static Portfolio<br>(Frontend)</div>
                     <div class="card-body">
                         <small class="fw-normal">
-                            The goal of this project is to making it easy for potential clients or employers to learn more about me and my work.
+                            The goal of this project is to making it easy for potential clients or employers to learn
+                            more about me and my work.
                         </small>
                         <!-- Project Stack -->
                         <div class="row g-0 align-items-center justify-content-center">
@@ -352,7 +378,26 @@ ul {
                     </div>
                 </div>
 
-                
+                <div class="custom-card card shadow text-dark bg-light m-2 col-lg-4 col-sm-6">
+                    <div class="card-header text-primary">Reaction Timer<br>(Frontend)</div>
+                    <div class="card-body">
+                        <small class="fw-normal">
+                            It is a simple Vue.js project that if we click Play Button, then it’s gonna wait a second or
+                            two until a green box appears as soon as it appears you have to click it as fast as you can
+                            then the rank and score is depends on speed of our click.
+                        </small>
+                        <!-- Project Stack -->
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <p class="col-lg-auto m-2 text-center">Vue.js</p>
+                        </div>
+
+                        <div class="project-links mt-2">
+                            <a href="https://github.com/HazelProdi/reaction-timer" class="card-link">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -369,18 +414,21 @@ ul {
                 <a href="mailto:prodi28hazel@gmail.com" class="custom-button btn border-primary">Email Me</a>
             </div>
 
-            
-            
+
+
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script>
         const tooltips = document.querySelectorAll('.tt')
         tooltips.forEach(t => {
             new bootstrap.Tooltip(t)
         })
     </script>
-    
+
 </body>
+
 </html>
